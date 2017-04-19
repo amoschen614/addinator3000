@@ -61,5 +61,5 @@ server.listen(process.env.PORT || 3000, function() {
 */
 var PORT = process.env.PORT || 3000;
 server.listen(PORT, function() {
-	console.log(`Server listening on port ${PORT}...`);
+	console.log('Server listening on port ' + PORT);
 });
