@@ -54,14 +54,12 @@ const server = http.createServer(function(request, response) {
 */
 //	response.end('Hello world!\n');
 });
-
-//const PORT = process.env.PORT || 3000;
-//server.listen(PORT, function() {
+/*
 server.listen(process.env.PORT || 3000, function() {
 	console.log(`Server listening...`);
 }); 
-/*
-	console.log(`Server listening on port ${PORT}...`);
-}
-});
 */
+var PORT = process.env.PORT || 3000;
+server.listen(PORT, function() {
+	console.log(`Server listening on port ${PORT}...`);
+});
